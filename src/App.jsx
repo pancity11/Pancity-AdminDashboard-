@@ -42,7 +42,7 @@ const NETWORKS = [
 /*  Set REACT_APP_API_BASE (CodeSandbox env var) to your backend URL,  */
 /*  e.g. "https://<your-backend-sandbox-id>-3000.csb.app/api"          */
 /* ------------------------------------------------------------------ */
-const API_BASE = (typeof process !== "undefined" && process.env && process.env.REACT_APP_API_BASE) || "http://localhost:3000/api";
+const API_BASE = (typeof process !== "undefined" && process.env && process.env.REACT_APP_API_BASE) || "https://pancity-backend.onrender.com/api";
 
 function getAdminToken() {
   return sessionStorage.getItem("pancity_admin_token") || null;
