@@ -379,42 +379,29 @@ function recentDate(maxDaysAgo) {
 
 const dataProviders = [
   {
-    id: "PRV-01", name: "VTpass", baseUrl: "https://vtpass.com/api",
-    apiKey: "vtp_live_9f82ac0e1b", networks: ["MTN", "Airtel", "Glo", "9mobile"],
-    planTypes: ["SME", "Corporate", "Gifting", "Direct Topup"],
-    plansCount: 42, status: "active", lastSynced: recentDate(2),
-  },
-  {
-    id: "PRV-02", name: "ClubKonnect", baseUrl: "https://www.nellobytesystems.com/api",
-    apiKey: "ck_live_44b1e7cd21", networks: ["MTN", "Airtel", "Glo"],
-    planTypes: ["SME", "Gifting"],
-    plansCount: 35, status: "active", lastSynced: recentDate(1),
-  },
-  {
-    id: "PRV-03", name: "Paybeta", baseUrl: "https://api.paybeta.ng",
-    apiKey: "pb_live_7a20de93cc", networks: ["MTN", "9mobile"],
-    planTypes: ["Corporate", "Direct Topup"],
-    plansCount: 18, status: "inactive", lastSynced: recentDate(9),
-  },
-  {
-    id: "PRV-04", name: "SimpleConnect", baseUrl: "https://api.simpleconnect.ng",
-    apiKey: "sc_live_1029fbe834", networks: ["Airtel", "Glo", "9mobile"],
-    planTypes: ["SME", "Gifting", "Direct Topup"],
-    plansCount: 27, status: "active", lastSynced: recentDate(4),
-  },
-  {
-    id: "PRV-05", name: "SmePlug", baseUrl: "https://smeplug.ng/api",
-    apiKey: "smp_live_5c11ef0a92", networks: ["MTN", "Airtel", "Glo", "9mobile"],
+    id: "PRV-01",
+    name: "SmePlug",
+    baseUrl: "https://smeplug.ng/api",
+    apiKey: "smp_live_5c11ef0a92",
+    networks: ["MTN", "Airtel", "Glo", "9mobile"],
     planTypes: ["SME"],
-    plansCount: 24, status: "active", lastSynced: recentDate(1),
+    plansCount: 24,
+    status: "active",
+    lastSynced: recentDate(1),
   },
   {
-    id: "PRV-06", name: "AutoSyncNG", baseUrl: "https://autosyncng.com/api",
-    apiKey: "asn_live_88d302ba4f", networks: ["MTN", "Airtel", "Glo", "9mobile"],
-    planTypes: ["Gifting", "Direct Topup"],
-    plansCount: 19, status: "active", lastSynced: recentDate(3),
+    id: "PRV-02",
+    name: "AutopilotNG",
+    baseUrl: "https://autopilotng.com/api",
+    apiKey: "ap_live_88d302ba4f",
+    networks: ["MTN", "Airtel", "Glo", "9mobile"],
+    planTypes: ["SME", "Gifting", "Direct Topup"],
+    plansCount: 30,
+    status: "active",
+    lastSynced: recentDate(1),
   },
 ];
+
 
 /* ---- Network data plans dataset (SME / Corporate / Gifting / Direct Topup) */
 const PLAN_CATEGORIES = ["SME", "Corporate", "Gifting", "Direct Topup"];
